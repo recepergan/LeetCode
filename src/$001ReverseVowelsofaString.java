@@ -9,7 +9,7 @@
  import java.util.Collections;
  import java.util.HashSet;
 
- public class ReverseVowelsofaString {
+ public class $001ReverseVowelsofaString {
 
         public static String reverseVowels(String s) {
 
