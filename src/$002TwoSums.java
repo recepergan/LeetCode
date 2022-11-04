@@ -36,12 +36,28 @@ public class $002TwoSums {
         }
         return result;
     }
+    public static int[] twoSummm(int[] nums, int target) {
+
+        int [] result = new int [2];
+        HashMap<Integer,Integer> index = new HashMap<Integer,Integer>();
+
+        for(int i = 0;i < nums.length;i ++) {
+            if(index.containsKey(target - nums[i])) {
+                    result[0] = index.get(target - nums[i]);
+                    result[1] = i;
+                    return result;
+            }
+            index.put(nums[i], i);
+            }
+
+        return result;
+    }
 
     public static void main(String[] args) {
 
         int [] array = {2,7,11,15};
         int target = 26;
-        int a[] = twoSumm(array,target);
+        int a[] = twoSummm(array,target);
 
         for(int i = 0; i < a.length; i++) {
             System.out.print(a[i]);
