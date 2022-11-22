@@ -1,5 +1,6 @@
 package vector;
 
+import java.util.Enumeration;
 import java.util.Vector;
 
 public class VectorExample2 {
@@ -34,5 +35,14 @@ public class VectorExample2 {
 
         //Get the element at specified index
         System.out.println("Element at index 1 is = "+in.get(1));
+
+        Enumeration enumeration = in.elements();
+        while (enumeration.hasMoreElements()) {
+            int i = (int) enumeration.nextElement();
+            System.out.println("enumeration" + i);
+
+        }
+
+
     }
 }

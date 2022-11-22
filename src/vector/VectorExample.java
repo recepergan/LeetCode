@@ -1,6 +1,7 @@
 package vector;
 
 import java.util.Vector;
+//dynamic lists
 
 public class VectorExample {
     public static void main(String[] args) {
